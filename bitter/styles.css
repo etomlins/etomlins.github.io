@@ -1,0 +1,155 @@
+aside {
+    width: 7%;
+    padding-left: 15px;
+    margin-left: 0px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    background-color: midnightblue;
+  }
+  
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: auto;
+  }
+hr {   
+  width: 100%;
+  size: 2;
+  color: gray;
+  margin: 20px;
+  margin-bottom: 10px;
+  }
+
+header h2 {
+    margin: 0;
+    color: white;
+  }
+  
+.search-bar {
+    position: absolute;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+  
+.header-nav {
+    margin-top: 10px;
+}
+  
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+  
+
+h1 {
+  color: white;
+
+}
+
+body { 
+  background-color:midnightblue;
+}
+
+
+img {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.post {
+  display: flex;
+  padding: 20px;
+  background-color: navy;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sidebar {
+  padding: 10;
+  width: 20%;
+  background-color: midnightblue;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+.new-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.post-input {
+  margin-right: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  height: 50px;
+  font-size: 16px;
+}
+
+.post-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.post {
+  background-color: midnightblue;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+}
+
