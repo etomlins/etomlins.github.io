@@ -1,112 +1,72 @@
-aside {
-    width: 7%;
-    padding-left: 15px;
-    margin-left: 0px;
-    float: left;
-    font-style: italic;
-    background-color: lightgray;
-  }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
-    background-color: midnightblue;
-  }
-  
-.header-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-  }
-  
-.logo {
-    position: absolute;
-    left: 20px;
-    width: 50px;
-    height: auto;
-  }
-hr {   
+/* top navbar styling */
+.nav {
+  background-color: #283268;
+  padding: 0;
+  margin: 0;
   width: 100%;
-  size: 2;
-  color: gray;
-  margin: 20px;
-  margin-bottom: 10px;
-  }
-
-header h2 {
-    margin: 0;
-    color: white;
-  }
-  
+  color: white;
+  height:50px;
+}
+.nav-item {
+  padding:5px;
+  margin: 0 10px;
+  color: white
+}
+.nav-link {
+  color: white !important;
+  font-size: 18px; 
+}
+.nav-link.active {
+  font-weight: bold;
+  color: white;
+}
+.logo {
+  position: absolute;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+}
 .search-bar {
-    position: absolute;
-    right: 20px;
-    padding: 5px 10px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
+  flex-direction: column;
+  position: absolute;
+  right: 5px;
+  margin: 7px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
 }
-  
-.header-nav {
-    margin-top: 10px;
-}
-  
-.header-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-  
-
-h1 {
+.sidebar, .news-sidebar {
+  background: #283268;
   color: white;
-
+  height: 100vh;
+  padding-top: 2em;
+  border: 1px solid #6c757d;
 }
-
-body { 
-  background-color:midnightblue;
-}
-
-
-img {
-  float: left;
-  width: 100px;
-  height: auto;
-  margin-bottom: 0px;
-}
-
-.post {
-  display: flex;
-  padding: 20px;
-  background-color: navy;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.sidebar {
-  padding: 10;
-  width: 20%;
-  background-color: midnightblue;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.sidebar ul {
+.sidebar ul, .news-sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-.sidebar ul li a {
+.sidebar ul li a, .news-sidebar ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   display: block;
   padding: 10px;
+}
+
+.news-sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#main-content {
+  padding: 0px;
+  background-color: #283268;
+  color: #283268;
+  box-sizing: border-box;
 }
 
 .profile-pic {
@@ -116,13 +76,11 @@ img {
   margin-right: 10px;
 }
 
-
-
 .new-post {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 20px;
+  background-color: #283268;
+  padding: 15px;
 }
 
 .post-input {
@@ -147,9 +105,112 @@ img {
   cursor: pointer;
 }
 
-.post {
-  background-color: midnightblue;
-  border-radius: 0px;
-  border: 1px solid #ccc;
+.d-block.border.border-secondary {
+  border-color: #6c757d;
+  box-shadow: none;
 }
 
+.card {
+  background-color: #283268;
+  /* border: 1px solid #6c757d; */
+  box-shadow: none;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #283268;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+  color: #283268;
+}
+
+.card-text {
+  color: white !important;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #283268;
+}
+
+
+
+/* sidebar */
+/* .sidebar {
+  padding: 10;
+  width: 5%;
+  background-color: #283268;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+/* .sidebar {
+  width: 5%;
+  display:block;
+  float:left;
+  position:fixed;
+  height:100%;
+  padding-top: 2em;
+  background-color:#283268;
+}
+
+.news-sidebar {
+  width: 5%;
+  display:block;
+  float:right;
+  position:fixed;
+  height:100%;
+  padding-top: 2em;
+  background-color:#283268;
+ */
+
+
+/* main content */
+/* #main-content {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #28325C;
+  box-sizing: border-box;
+}
+  
+
+/* news sidebar */
+/* .news-sidebar {
+  width: 15%;
+  display: block;
+  float: right;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background: #283268;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid #dae3e9;
+}
+ */
+
+.logo {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 

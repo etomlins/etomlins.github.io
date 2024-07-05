@@ -9,56 +9,111 @@
 
 </head>
 
+<!-- bitter background hex color: 283268 -->
+
 <body>
-    <header>
-        <div class="container-fluid">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h2 class="text-center">Bitter. It's what's not happening.</h2>
-            <input type="text" placeholder="Search..." class="search-bar">
+    <!-- navbar -->
+    <div class="container-fluid p-0 m-0">
+        <span class="d-block border border-secondary bg-light">
+            <ul class="nav justify-content-center">
+                <img src="logo.png" alt="Logo" class="logo">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">for you</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">following</a>
+                </li>
+                <input type="text" placeholder="Search..." class="search-bar d-none d-md-block">
+            </ul>
+        </span>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-md-2 sidebar">
+                <ul>
+                    <li><a href="src.html">Home</a></li>
+                    <li><a href="https://google.com">Search</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="mailto:ellentomlins2026@u.northwestern.edu">Contact me</a></li>
+                </ul>
         </div>
-        <hr>
-        <nav class="header-nav">  
-            <a href="following.html">following</a> | 
-            <a href="foryou.html">for you</a>
-        </nav>
-        <hr>
 
+            <!-- main content -->
+            <div class="col-md-8" id="main-content">
+                <span class="d-block border border-secondary">
+                <form class="new-post">
+                    <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+                    <textarea placeholder="What's not happening?" class="post-input"></textarea>
+                    <button type="submit" class="post-button">Post</button>
+                </form>
+                </span>
+                <!-- this is where posts go -->
+            <span class="d-block border border-secondary">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+                        <h2 class="card-title">Ellen @ellen</h2>
+                        <p class="card-text">Here is my first bleat on Bitter, my new social media platform.</p>
+                    </div>
+                </div>
+            </span>
+            
+            <span class="d-block border border-secondary">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+                        <h2 class="card-title">Ellen @ellen</h2>
+                        <p class="card-text">What's up! Welcome to bitter.</p>
+                    </div>
+                </div>
+            </span>
 
-    </header>
+            </div>
+
+            <!-- news sidebar -->
+            <div class="col-md-2 news-sidebar d-none d-md-block">
+                <h2>News</h2>
+                <ul>
+                    <li><a href="#">Breaking News 1</a></li>
+                    <li><a href="#">Breaking News 2</a></li>
+                    <li><a href="#">Breaking News 3</a></li>
+                    <li><a href="#">Breaking News 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
     
     
     
-    <aside class="sidebar">
-    
-        <ul>
-            <li><a href="src.html">Home</a></li>
-            <li><a href="https://google.com">Search</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="mailto:ellentomlins2026@u.northwestern.edu">Contact me</a></li>
-        </ul>
-    </aside>
-    
+<!-- <div class="container" id="main-content">
+
     <form class="new-post">
         <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
         <textarea placeholder="What's not happening?" class="post-input"></textarea>
         <button type="submit" class="post-button">Post</button>
     </form>
-
-    <div class="post">
+    this is where posts go
+    <div class="card">
             <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
-            Ellen @ellen <br>
+            <h2 class="card-header">Ellen @ellen </h2>
             Here is my first bleat on Bitter, my new social media platform.
     </div>
     <div class="post">
         <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
         Ellen @ellen <br>
         What's up! Welcome to bitter.
-</div>
+    </div>
+</div> -->
 
 
 </body>
-
-
 </html>
