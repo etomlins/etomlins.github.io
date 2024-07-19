@@ -11,12 +11,20 @@
 .nav-item {
   padding:5px;
   margin: 0 10px;
-  color: white
+  color: white;
 }
 .nav-link {
   color: white !important;
   font-size: 18px; 
 }
+
+.nav-item:hover {
+  padding:5px;
+  margin: 0 10px;
+  color: white;
+  background-color: #2f3a78;
+}
+
 .nav-link.active {
   font-weight: bold;
   color: white;
@@ -42,11 +50,14 @@
   color: white;
   height: 100vh;
   padding-top: 2em;
-  border: 1px solid #6c757d;
+  border: .5px solid #6c757d;
+  width: 16.6667%;
+
 }
 .sidebar ul, .news-sidebar ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .sidebar ul li a, .news-sidebar ul li a {
@@ -55,6 +66,17 @@
   font-size: 18px;
   display: block;
   padding: 10px;
+}
+
+.sidebar ul li a:hover, .news-sidebar ul li a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  
 }
 
 .news-sidebar h2 {
@@ -80,19 +102,18 @@
   display: flex;
   align-items: center;
   background-color: #283268;
-  padding: 15px;
+  padding: 50px;
 }
 
 .post-input {
   margin-right: 10px;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  color:white !important;
   resize: none;
-  height: 50px;
-  font-size: 16px;
+  height: 60px;
+  font-size: 25px;
 }
 
 .post-button {
@@ -115,11 +136,21 @@
   /* border: 1px solid #6c757d; */
   box-shadow: none;
 }
+/* 3e4d9e */
+
 
 .card-body {
   padding: 20px;
   background-color: #283268;
 }
+
+.card-body:hover {
+  background-color: #2f3a78;
+  /* border: 1px solid #6c757d; */
+  box-shadow: none;
+
+}
+
 
 .card-title {
   margin: 0;
@@ -136,6 +167,56 @@
   color: #283268;
 }
 
+
+.profile-header {
+  background: url('imgs/banner.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.profile-pic-large {
+  height: 250px;
+  /* border-radius: 50%;
+  border: 5px solid #283268; */
+  position: absolute;
+  bottom: -150px;
+  left: 50px;
+}
+.profile-info {
+  margin-top: 75px;
+  padding: 20px;
+  color: white;
+}
+.edit-profile {
+  background-color: #6c757d;
+  border: 2px solid black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.posts {
+  margin-top: 20px;
+}
+.post {
+  background-color: #1c1c1c;
+  border: 1px solid #6c757d;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+/* .logo {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: auto;
+} */
 
 
 /* sidebar */
@@ -201,13 +282,35 @@
   width: 50px;
   height: auto;
 }
+.modal-header {
+  border-bottom: none;
+  padding: 15px 20px;
+  background-color: #2f3a78;
+}
+
+.modal-content {
+  max-width: 800px;
+  width: 750px;
+  margin: auto;
+  background-color:#283268;
+}
+.modal-body {
+  padding: 20px;
+  background-color: #283268;
+}
 
 
 
+html, body {
+  height: 100%;
+  background-color: #283268;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
 
 
-
-
+/* modal stuff */
 
 
 

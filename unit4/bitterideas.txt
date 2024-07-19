@@ -8,3 +8,4 @@ bitter ideas
 - need to add option to like, place on your profile to see likes and replies
 - use twitter api to upload my tweets when i post them to bitter
 - i want the font to be like the font that spotify just changed the app to
+- baa like a sheep when you post a bleat
