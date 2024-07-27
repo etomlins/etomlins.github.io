@@ -2,18 +2,17 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import NewsSidebar from './NewsSidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles.css'; // Adjust the path based on your file structure
+import '../styles.css'; 
 
 function ForYou() {
   const showTweet = (element) => {
-    // Function to handle the modal display
   };
 
   return (
     <div className="container-fluid p-0 m-0">
       <span className="d-block border border-secondary bg-light">
         <ul className="nav justify-content-center">
-          <img src="imgs/logo.png" alt="Logo" className="logo" />
+          <img src="/imgs/logo.png" alt="Logo" className="logo" />
           <li className="nav-item">
             <a href="/foryou" className="nav-link active">for you</a>
           </li>
@@ -30,7 +29,7 @@ function ForYou() {
             <span className="d-block border border-secondary" data-bs-toggle="modal" data-bs-target="#tweet-modal" onClick={showTweet}>
               <div className="card border-0">
                 <div className="card-body">
-                  <img src="imgs/profile-pic.png" alt="Profile Picture" className="profile-pic" />
+                  <img src="/imgs/profile-pic.png" alt="Profile Picture" className="profile-pic" />
                   <h2 className="card-title">Ellen @ellen</h2>
                   <p className="card-text">This is the for you page, filled with bleats we think you'll like.</p>
                 </div>
@@ -39,7 +38,7 @@ function ForYou() {
             <span className="d-block border border-secondary" data-bs-toggle="modal" data-bs-target="#tweet-modal" onClick={showTweet}>
               <div className="card border-0">
                 <div className="card-body">
-                  <img src="imgs/profile-pic.png" alt="Profile Picture" className="profile-pic" />
+                  <img src="/imgs/profile-pic.png" alt="Profile Picture" className="profile-pic" />
                   <h2 className="card-title">Ellen @ellen</h2>
                   <p className="card-text">What's up! Welcome to bitter.</p>
                 </div>

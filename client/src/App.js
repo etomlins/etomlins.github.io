@@ -11,7 +11,6 @@ import Messages from './components/Messages';
 import Profile from './components/Profile';
 import './App.css';
 
-
 function App() {
   return (
     <Router>
@@ -20,14 +19,14 @@ function App() {
         <div className="container-fluid">
           <div className="row">
             <Sidebar />
-            <Switch>
-              <Route path="/" exact component={MainContent} />
-              <Route path="/foryou" component={ForYou} />
-              <Route path="/following" component={Following} />
-              <Route path="/notifications" component={Notifications} />
-              <Route path="/messages" component={Messages} />
-              <Route path="/profile" component={Profile} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<MainContent />} />
+              <Route path="/foryou" element={<ForYou />} />
+              <Route path="/following" element={<Following />} />
+              <Route path="/notifications" element={<Notifications />} />
+              <Route path="/messages" element={<Messages />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
             <NewsSidebar />
           </div>
         </div>

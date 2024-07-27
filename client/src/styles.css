@@ -52,6 +52,7 @@
   padding-top: 2em;
   border: .5px solid #6c757d;
   width: 16.6667%;
+  text-align: left;
 
 }
 .sidebar ul, .news-sidebar ul {
@@ -66,6 +67,7 @@
   font-size: 18px;
   display: block;
   padding: 10px;
+  text-align: left;
 }
 
 .sidebar ul li a:hover, .news-sidebar ul li a:hover {
@@ -76,6 +78,7 @@
   padding: 10px;
   background-color: #4a90e2;
   color: #ffffff;
+  text-align: left;
   
 }
 
@@ -89,6 +92,7 @@
   background-color: #283268;
   color: #283268;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .profile-pic {
@@ -100,9 +104,11 @@
 
 .new-post {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  /* align-items: center; */
   background-color: #283268;
   padding: 50px;
+  text-align: left;
 }
 
 .post-input {
@@ -169,12 +175,12 @@
 
 
 .profile-header {
-  background: url('imgs/banner.jpeg') no-repeat center center;
+  background: url('/public/imgs/banner.jpeg') no-repeat center center;
   background-size: cover;
   height: 200px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   color: white;
   position: relative;
 }
@@ -211,6 +217,33 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
+
+.tweet-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.retweet-button, .like-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.retweet-button:hover {
+  color: #4a90e2;
+}
+
+.like-button:hover {
+  color: #c93c77;
+}
+
 /* .logo {
   position: absolute;
   left: 20px;

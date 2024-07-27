@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Notifications() {
+function Messages() {
   return (
     <div>
       <h1>Messages</h1>
@@ -9,4 +9,4 @@ function Notifications() {
   );
 }
 
-export default Notifications;
+export default Messages;

@@ -5,7 +5,7 @@ function Navbar() {
     <div className="container-fluid p-0 m-0">
       <span className="d-block border border-secondary bg-light">
         <ul className="nav justify-content-center">
-          <img src="imgs/logo.png" alt="Logo" className="logo" />
+          <img src="/imgs/logo.png" alt="Logo" className="logo" />
           <li className="nav-item">
             <a href="foryou.html" className="nav-link active">for you</a>
           </li>
