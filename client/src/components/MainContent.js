@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { fetchTweets, createTweet } from '../api';
+import { auth } from '../firebase';
 import '../styles.css';
 
 function MainContent() {
   const [posts, setPosts] = useState([]);
   const [input, setInput] = useState('');
+  const userId = auth.currentUser?.uid;
 
-  const handleSubmit = (event) => {
+  useEffect(() => {
+    const getTweets = async () => {
+      if (userId) {
+        const tweets = await fetchTweets(userId);
+        setPosts(tweets);
+      }
+    };
+    getTweets();
+  }, [userId]);
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (input.trim() !== '') {
-      setPosts([...posts, { username: 'Ellen @ellen', content: input }]);
+      const newTweet = { username: auth.currentUser.email, content: input, userId: userId };
+      const response = await createTweet(newTweet);
+      setPosts([...posts, response.tweet]);
       setInput('');
     }
   };
